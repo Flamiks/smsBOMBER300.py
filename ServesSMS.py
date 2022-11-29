@@ -295,6 +295,8 @@ def _sms(phone):
         except:
             y += 1
             print('\n        [\033[31m-\033[33m] сообщение от citilink.ru не отправлено!')
+
+        
         try:
              x += 1
              requests.post(
