@@ -1,4 +1,4 @@
-CJ
+
 import os, sys
 import fake_useragent
 import requests
