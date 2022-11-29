@@ -46,10 +46,10 @@ def _sms(phone):
         try:
             a = requests.post(" https://api.fix-price.com/buyer/v2/registration/phone/request", json={"phone" : "+" + phone}, headers=headers1, timeout=5.05)
             x += 1
-            print('\n        [\033[32m+\033[33m] сообщение от lenta.com отправлено!')
+            print('\n        [\033[32m+\033[33m] сообщение от fix-price.com отправлено!')
         except:
             y += 1
-            print('\n        [\033[31m-\033[33m] сообщение от lenta.com не отправлено!')
+            print('\n        [\033[31m-\033[33m] сообщение от fix-price.com не отправлено!')
         try:
             a = requests.post("https://taxi.yandex.ru/3.0/auth",
                           json={"id": "fa137685fd594a9f86f529eec9543e96", "phone": phone}, headers=headers1, timeout=5.05)
