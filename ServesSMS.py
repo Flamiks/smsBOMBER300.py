@@ -292,7 +292,7 @@ def _sms(phone):
                 "https://www.citilink.ru/registration/confirm/phone/+" + phone + "/"
             )
             print('\n        [\033[32m+\033[33m] сообщение от citilink.ru отправлено!')
-        except:
+         except:
             y += 1
             print('\n        [\033[31m-\033[33m] сообщение от citilink.ru не отправлено!')
          try:
