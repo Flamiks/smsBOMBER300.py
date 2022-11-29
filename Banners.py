@@ -6,7 +6,7 @@ init()
 
 kol2 = 5
 version = 'Бета'
-servies_k = '30'
+servies_k = '32'
 
 
 def banner3():
